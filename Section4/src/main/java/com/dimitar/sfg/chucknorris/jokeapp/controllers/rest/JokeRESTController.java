@@ -1,4 +1,4 @@
-package com.dimitar.sfg.chucknorris.jokeapp.controllers;
+package com.dimitar.sfg.chucknorris.jokeapp.controllers.rest;
 
 import com.dimitar.sfg.chucknorris.jokeapp.services.JokeService;
 import org.springframework.beans.factory.annotation.Autowired;
