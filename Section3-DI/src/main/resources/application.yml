@@ -1,0 +1,12 @@
+
+dimitar:
+  ime: dimitar_from_yml
+  sifra: sifra_from_yml
+  dburl: database_url_from_yml
+
+--- # tri crte su FILE SEPARATOR!!!
+spring:
+  profiles: de
+
+dimitar:
+  ime: GERMAN NAME FROM YML
