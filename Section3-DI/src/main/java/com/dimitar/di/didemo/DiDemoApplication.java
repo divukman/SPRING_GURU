@@ -1,9 +1,7 @@
 package com.dimitar.di.didemo;
 
-import com.dimitar.di.controllers.HelloController;
-import com.dimitar.di.controllers.HelloControllerUsingPrimary;
-import com.dimitar.di.controllers.NewHelloController;
-import com.dimitar.di.data.FakeDataSource;
+import com.dimitar.di.examplebeans.FakeDataSource;
+import com.dimitar.di.examplebeans.FakeJmsBroker;
 import lombok.extern.java.Log;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -34,6 +32,10 @@ public class DiDemoApplication {
 
         final FakeDataSource fakeDataSource = (FakeDataSource) context.getBean(FakeDataSource.class);
         log.info(fakeDataSource.toString());
+
+
+        final FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) context.getBean(FakeJmsBroker.class);
+        log.info(fakeJmsBroker.toString());
 
     }
 

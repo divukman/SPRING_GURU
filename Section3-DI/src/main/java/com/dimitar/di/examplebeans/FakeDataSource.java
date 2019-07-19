@@ -1,4 +1,4 @@
-package com.dimitar.di.data;
+package com.dimitar.di.examplebeans;
 
 import lombok.Builder;
 import lombok.Data;
