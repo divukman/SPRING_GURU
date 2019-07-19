@@ -17,10 +17,10 @@ import org.springframework.core.env.Environment;
 //                "classpath:jms.properties"
 //        })
 
-@PropertySources({
-        @PropertySource("classpath:custom.properties"),
-        @PropertySource("classpath:jms.properties")
-})
+//@PropertySources({
+//        @PropertySource("classpath:custom.properties"),
+//        @PropertySource("classpath:jms.properties")
+//})
 public class CustomConfig {
 
     @Autowired
@@ -49,7 +49,7 @@ public class CustomConfig {
 
     @Bean
     FakeDataSource fakeDataSource() {
-        return FakeDataSource.builder().name(env.getProperty("IME")).password(password).URL(url).build();
+        return FakeDataSource.builder().name( /*env.getProperty("IME")*/ username).password(password).URL(url).build();
     }
 
     @Bean
